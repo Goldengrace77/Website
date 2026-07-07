@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get a Free Quote | Golden Grace Services Perth</title>
+<meta name="description" content="Request a free quote from Golden Grace Services in minutes. Choose your service, preferred date and time, and send your details online.">
+<meta name="keywords" content="free quote Perth, cleaning quote Perth, gardening quote Perth">
+<link rel="canonical" href="https://www.goldengrace.com.au/booking.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Get a Free Quote | Golden Grace Services">
+<meta property="og:description" content="Choose your service, date and time, then send your quote request online.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#1B4332">
+<link rel="icon" href="Photo/Logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand" aria-label="Golden Grace Services home">
+      <img class="brand-mark" src="Photo/Logo.jpeg" alt="Golden Grace Services logo" width="512" height="512">
+      <span>Golden Grace<span class="brand-sub">Services</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services-cleaning.html">Cleaning</a>
+      <a href="services-gardening.html">Gardening</a>
+      <a href="booking.html" class="btn btn-gold nav-cta">Get a Free Quote</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero" style="background-image:url('Photo/PriceQuote.jpg');padding-bottom:2.5rem;">
+    <div class="container">
+      <h1>Get a Free Quote</h1>
+      <p class="lede" style="color:var(--sage);">Choose your service, tell us where you need help, and our team will contact you shortly.</p>
+    </div>
+  </section>
+
+  <section class="section section--cream" style="padding-top:3rem;">
+    <div class="container">
+      <form id="booking-form" class="quote-form" data-quote-form data-validate novalidate>
+        <div class="form-grid">
+          <div class="field full">
+            <label for="bk-name">Full Name <span class="required">*</span></label>
+            <input type="text" id="bk-name" name="fullName" required autocomplete="name">
+            <span class="error-msg" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="bk-email">Email Address <span class="required">*</span></label>
+            <input type="email" id="bk-email" name="email" required autocomplete="email">
+            <span class="error-msg" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="bk-phone">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="bk-phone" name="phone" required autocomplete="tel">
+            <span class="error-msg" role="alert"></span>
+          </div>
+          <div class="field full">
+            <label for="bk-service">Select Service <span class="required">*</span></label>
+            <select id="bk-service" name="service" required>
+              <option value="">-- Select a Service --</option>
+              <optgroup label="Cleaning Services">
+                <option value="home-care-cleaning">Home Care Cleaning</option>
+                <option value="domestic-cleaning">Domestic Cleaning</option>
+                <option value="medical-centre-cleaning">Medical Centre Cleaning</option>
+                <option value="airbnb-cleaning">Airbnb Cleaning</option>
+                <option value="car-showroom-cleaning">Car Showroom Cleaning</option>
+                <option value="gym-cleaning">Gym Cleaning</option>
+                <option value="retail-shop-cleaning">Retail Shop Cleaning</option>
+                <option value="hotels-pub-cleaning">Hotels &amp; Pub Cleaning</option>
+                <option value="end-of-lease-cleaning">End of Lease Cleaning</option>
+                <option value="post-construction-cleaning">Post Construction Cleaning</option>
+                <option value="window-cleaning">Window Cleaning</option>
+                <option value="pressure-washing">Pressure Washing</option>
+              </optgroup>
+              <optgroup label="Gardening Services">
+                <option value="lawn-mowing">Lawn Mowing</option>
+                <option value="garden-maintenance">Garden Maintenance</option>
+                <option value="hedge-trimming">Hedge Trimming</option>
+                <option value="tree-pruning">Tree Pruning</option>
+                <option value="weed-removal">Weed Removal</option>
+                <option value="mulching">Mulching</option>
+              </optgroup>
+            </select>
+            <span class="error-msg" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="bk-date">Preferred Date <span class="required">*</span></label>
+            <input type="date" id="bk-date" name="date" required>
+            <span class="error-msg" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="bk-time">Preferred Time <span class="required">*</span></label>
+            <select id="bk-time" name="time" required>
+              <option value="">Select a time…</option>
+              <option value="07:00">7:00 AM – 9:00 AM</option>
+              <option value="09:00">9:00 AM – 11:00 AM</option>
+              <option value="11:00">11:00 AM – 1:00 PM</option>
+              <option value="13:00">1:00 PM – 3:00 PM</option>
+              <option value="15:00">3:00 PM – 5:00 PM</option>
+            </select>
+            <span class="error-msg" role="alert"></span>
+          </div>
+          <div class="field full">
+            <label for="bk-location">Client Location / Address <span class="required">*</span></label>
+            <input type="text" id="bk-location" name="location" required autocomplete="street-address" placeholder="Street, Suburb, Perth WA">
+            <span class="error-msg" role="alert"></span>
+          </div>
+          <div class="field full">
+            <label for="bk-notes">Service Description</label>
+            <textarea id="bk-notes" name="notes" placeholder="Write your requirements here..."></textarea>
+            <span class="error-msg" role="alert"></span>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-block">Send Quote Request</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="brand">
+        <img class="brand-mark" src="Photo/Logo.jpeg" alt="Golden Grace Services logo" width="512" height="512">
+        <span>Golden Grace<span class="brand-sub">Services</span></span>
+      </a>
+      <p>Premium cleaning and gardening care for homes and businesses across Perth, WA.</p>
+    </div>
+    <nav class="footer-col" aria-label="Quick links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services-cleaning.html">Cleaning</a></li>
+        <li><a href="services-gardening.html">Gardening</a></li>
+        <li><a href="booking.html">Get a Free Quote</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li>Perth Metro, WA, Australia</li>
+        <li><a href="tel:+61485903551">+61 485 903 551</a></li>
+        <li><a href="mailto:info@goldengrace.com.au">info@goldengrace.com.au</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span data-year>2026</span> Golden Grace Services. All rights reserved.</span>
+    <span><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
